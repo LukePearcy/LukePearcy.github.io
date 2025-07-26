@@ -10,10 +10,7 @@
     --link-color:#aba9ff;
 }
 html{
-    background-color: var(--background-color);
     font-family: "Fragment Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     background-color: var(--background-color);
     color:var(--text-color);
 }
