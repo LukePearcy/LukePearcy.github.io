@@ -7,112 +7,56 @@
     --background-color:#040021;
     --text-color:white;
     --heading-color:#4A92DB;
-    --link-color:#5754FF;
+    --link-color:#aba9ff;
 }
-
 html{
     background-color: var(--background-color);
-}
-
-body{
-    display:grid;
-    grid-template-areas: "head nav"
-                        "main main"
-                        "foot foot";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto 1fr auto;
-}
-
-
-button.scrollToTopButton{
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 0;
-}
-
-
-
-
-/* @media screen and (min-width:25em){
-    body{
-        display:grid;
-        grid-template-areas: "head head"
-                            "nav nav"
-                            "main main"
-                            "foot foot";
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto 1fr auto;
-    }
-} */
-
-body > *{
-    padding: .2rem 4rem;
     font-family: "Fragment Mono", monospace;
     font-weight: 400;
     font-style: normal;
     background-color: var(--background-color);
     color:var(--text-color);
 }
-
-
-body>hr.rounded{
-    border-radius: .01rem;
-    border-color: var(--text-color);
-    fill: var(--text-color);
-    padding-left: .5em;
-    padding-right: .5em;
+button.scrollToTopButton{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 0;
 }
-
-
-body > header{
-    grid-area: head;
-    align-content: center;
-    padding: .5rem 3rem;
-}
-
-body > nav{
-    grid-area: nav;
-    padding: .5 3rem;
-}
-body > nav ul{
-    list-style-type: none;
-    padding:0;
-}
-body>nav ul li{
-    display: inline;
-    
-}
-
 :link, :visited{
     color:var(--link-color);
 }
-
-
-body > main{
-    grid-area: main;  
+footer {
+    display: flex;
+    justify-content: center;
 }
 
-body>main>ul>li{
-    margin-bottom: 1rem;
+.button-row {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-body > footer{
-    grid-area: foot;
-    align-content: center;
+.button-row > a{
+    padding: 15px;
+    padding-left: 15px;
+    font-size: larger;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
 }
-
-header, footer{
-    padding-top: var(--vertical-space);
-    padding-bottom: var(--horizontal-space);
+.button-row > a:hover {
+    font-weight: 800;
+    backdrop-filter: brightness(.2);
 }
-
-header h1, footer h1{
+.site-logo{
     margin: 0;
+    align-self: center;
+}
+.main-navbar{
+    display: flex;
+
 }
 
-img{
-    max-width: 100%;
-    height: 10em;
-}
+
 
 
