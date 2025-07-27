@@ -9,6 +9,9 @@
     --heading-color:#4A92DB;
     --link-color:#aba9ff;
 }
+a{
+    color: var(--link-color);
+}
 html{
     font-family: "Fragment Mono", monospace;
     background-color: var(--background-color);
@@ -18,9 +21,6 @@ button.scrollToTopButton{
     background-color: var(--text-color);
     color: var(--background-color);
     padding: 0;
-}
-:link, :visited{
-    color:var(--link-color);
 }
 footer {
     display: flex;

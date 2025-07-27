@@ -16,12 +16,51 @@
             </div>
         </header>
         <hr>
+        <style>
+            img{
+                height: 15em;
+                width: fit-content;
+                margin-right: 2em;
+                float: left;
+            }
+            p{
+                min-height: 15em;
+                max-width: 1000px;
+            }
+            ul{
+                list-style: none;
+            }
+            h2 > a{
+                padding: 15px;
+                padding-left: 15px;
+                font-size: larger;
+                color: var(--text-color);
+                font-weight: 500;
+                text-decoration: none;
+            }
+            h2 > a:hover {
+                font-weight: 800;
+                backdrop-filter: brightness(.2);
+            }
+        </style>
         <main>
             <h1>Portfolio</h1>
             <ul id="portfolioItems">
                 <li>
-                    <h2><a href="a">Project Name</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla aliquet enim tortor at auctor. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris.</p>
+                    <h2><a href="https://www.rhventures.org/remote-medication-monitoring-app/">EramX</a></h2>
+                    <img src="https://www.rhventures.org/wp-content/uploads/2020/06/news_feature_eramx.jpg" alt="person looking at computer screen showing images from remote monitoring app.">
+                    <p>EramX is an aspnet-based webapp and companion mobile application that i have been developing as an intern for Rose-Hulman Ventures.
+                        The webapp allows remote observers to perform remote drug testing with participants through a video call. 
+                        The system is invite-only, but you can read about it from the <a href="https://www.rhventures.org/remote-medication-monitoring-app/">Ventures article</a>.
+                    </p>
+                </li>
+                <li>
+                    <h2><a href="https://www.rhventures.org/remote-medication-monitoring-app/">EramX</a></h2>
+                    <img src="https://www.rhventures.org/wp-content/uploads/2020/06/news_feature_eramx.jpg" alt="person looking at computer screen showing images from remote monitoring app.">
+                    <p>EramX is an aspnet-based webapp and companion mobile application that i have been developing as an intern for Rose-Hulman Ventures.
+                        The webapp allows remote observers to perform remote drug testing with participants through a video call. 
+                        The system is invite-only, but you can read about it from the <a href="https://www.rhventures.org/remote-medication-monitoring-app/">Ventures article</a>.
+                    </p>
                 </li>
             </ul>
         </main>
